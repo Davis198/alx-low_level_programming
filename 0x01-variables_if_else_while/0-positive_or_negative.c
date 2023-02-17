@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - 
+ * main - print a random numder
  *
- * Return: 0 (Success)
+ * Return: 0
  */
 int main(void)
 {

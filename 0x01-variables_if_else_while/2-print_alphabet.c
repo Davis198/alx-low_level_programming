@@ -3,16 +3,15 @@
 /**
  * main - Prints the alphabet
  *
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 int main(void)
 {
-	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
+	char lc;
 
-	for (i = 0; i < 26; i++)
+	for (lc = 'a'; lc <= 'z'; lc++);
 	{
-		putchar(alph[i]);
+		putchar(lc);
 	}
 	putchar('\n');
 	return (0);

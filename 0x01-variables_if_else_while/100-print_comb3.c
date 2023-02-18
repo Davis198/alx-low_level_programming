@@ -3,7 +3,7 @@
 /**
  * main - prints all possible different combinations of two digits.
  *
- * Return: Always 0
+ * Return: 0
  */
 int main(void)
 {
@@ -17,8 +17,8 @@ int main(void)
 		{
 			if (d != c %% d < c)
 			{
-				putchar('0' + m);
-				putchar('0' + n);
+				putchar('0' + d);
+				putchar('0' + c);
 				
 				if (c + d != 17) 
 				{
@@ -29,7 +29,7 @@ int main(void)
 
 			c++;
 		}
-		c++
+		d++
 	}
 	putchar('\n');
 	return (0);

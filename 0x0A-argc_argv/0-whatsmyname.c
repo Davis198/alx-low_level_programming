@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - prints its name, followed by a new line.
@@ -7,10 +8,9 @@
  *
  * Return: 0
  */
-int main(int argc, char **argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	(void)argv; /*ignore argv*/
+	printf("%s\n", *argv);
 
-	printf("%1\n", argc -1);
 	return (0);
 }

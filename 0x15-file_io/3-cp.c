@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
 	int o_from, o_to, close_to, close_from;
 	ssize_t lenr, lenw;
 	char buffer[1024];
-	file_perm;
+	mode_t file_perm;
 
 	check97(argc);
 	o_from = open(argv[1], O_RDONLY);

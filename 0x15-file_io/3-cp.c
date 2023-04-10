@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
 
@@ -55,7 +54,7 @@ void check99(ssize_t check, char *file, int o_from, int o_to)
 {
 	if (check == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
+		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", file);
 		if (o_from != -1)
 			close(o_from);
 		if (o_to != -1)

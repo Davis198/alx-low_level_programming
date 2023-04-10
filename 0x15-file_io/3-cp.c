@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "main.h"
 
 /**
  * check97 - checks for the correct number of arguments
@@ -23,7 +22,6 @@ void check97(int argc)
  * @file: file_from name
  * @o_from: file descriptor of file_from, or -1
  * @o_to: file descriptor of file_to, or -1
- *
  * Return: void
  */
 
@@ -42,11 +40,10 @@ void check98(ssize_t check, char *file, int o_from, int o_to)
 
 /**
  * check99 - checks that file_to was created and/or can be written to
- * @check: checks if true of false
+ * @check: checks if true or false
  * @file: file_to name
  * @o_from: file descriptor of file_from, or -1
  * @o_to: file descriptor of file_to, or -1
- *
  * Return: void
  */
 
@@ -54,7 +51,7 @@ void check99(ssize_t check, char *file, int o_from, int o_to)
 {
 	if (check == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
+		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", file);
 		if (o_from != -1)
 			close(o_from);
 		if (o_to != -1)
@@ -67,7 +64,6 @@ void check99(ssize_t check, char *file, int o_from, int o_to)
  * check100 - checks that file descriptors were closed properly
  * @check: checks if true or false
  * @o: file descriptor
- *
  * Return: void
  */
 
@@ -84,7 +80,6 @@ void check100(int check, int o)
  * main - opies the content of a file to another file.
  * @argc: number of arguments passed
  * @argv: array of pointers to the arguments
- *
  * Return: 0 on success
  */
 

@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
 
 /**
  * check97 - checks for the correct number of arguments
  * @argc: number of arguments
- *
  * Return: void
  */
 
@@ -66,16 +66,16 @@ void check99(ssize_t check, char *file, int o_from, int o_to)
 /**
  * check100 - checks that file descriptors were closed properly
  * @check: checks if true or false
- * @y: file descriptor
+ * @o: file descriptor
  *
  * Return: void
  */
 
-void check100(int check, int y)
+void check100(int check, int o)
 {
 	if (check == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close y %d\n", y);
+		dprintf(STDERR_FILENO, "Error: Can't close o %d\n", o);
 		exit(100);
 	}
 }

@@ -54,7 +54,7 @@ void check99(ssize_t check, char *file, int o_from, int o_to)
 {
 	if (check == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", file);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
 		if (o_from != -1)
 			close(o_from);
 		if (o_to != -1)
@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
 	int o_from, o_to, close_to, close_from;
 	ssize_t lenr, lenw;
 	char buffer[1024];
-	mode_t file_perm;
+	file_perm;
 
 	check97(argc);
 	o_from = open(argv[1], O_RDONLY);
